@@ -8,9 +8,25 @@
 
 import Foundation
 
+// https://leetcode-cn.com/problems/reverse-integer/
 // 给定一个 32 位有符号整数，将整数中的数字进行反转。
 
-func reverse_mine(_ x: Int) -> Int {
+func reverse_good(_ x: Int) -> Int {
+	// 遍历取余
+	var p = x
+	var result = 0
+	while p != 0 {
+		result = result * 10 + p % 10
+		p /= 10
+	}
+	if result > Int32.max || result < Int32.min {
+		return 0
+	}
+	return result
+}
+
+
+func reverse_bad(_ x: Int) -> Int {
     let stringX = "\(x)"
     var finalStr = ""
     var isSmallThanZero = false;
@@ -36,7 +52,7 @@ func reverse_mine(_ x: Int) -> Int {
     return n;
 }
 
-func reverse_normal(_ x: Int) -> Int {
+func reverse_trick(_ x: Int) -> Int {
     var stringX = "\(x)"
     var isSmallThanZero = false;
     if x < 0 {
@@ -53,23 +69,7 @@ func reverse_normal(_ x: Int) -> Int {
     return 0
 }
 
-func reverse_good(_ x: Int) -> Int {
-    
-    var p = x
-    var result = 0
-    while p != 0 {
-        if result > Int32.max/10 || (result == Int32.max/10 && p % 10 > 7) {
-            return 0;
-        }
-        if result < Int32.min/10 || (result == Int32.min/10 && p % 10 < -8) {
-            return 0;
-        }
-        result = result * 10 + p % 10
-        p /= 10
-    }
-    return result
-}
-
-print("\(reverse_mine(1534236469))")
-print("\(reverse_normal(1534236469))")
 print("\(reverse_good(-14236469))")
+print("\(reverse_bad(1534236469))")
+print("\(reverse_trick(1534236469))")
+

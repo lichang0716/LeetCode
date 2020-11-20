@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LeetCode_ReserseInteger.xcodeproj">
+      location = "self:/Users/pwnlc/Desktop/LeetCode/Easy/1.LeetCode_TwoSum/TwoSum.xcodeproj">
    </FileRef>
 </Workspace>

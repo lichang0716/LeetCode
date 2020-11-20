@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LeetCode_PalindromeNumber.xcodeproj">
+      location = "self:/Users/pwnlc/Desktop/LeetCode/Easy/2.ReserseInteger/ReserseInteger.xcodeproj">
    </FileRef>
 </Workspace>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LeetCode_TwoSum.xcodeproj">
+      location = "self:/Users/pwnlc/Desktop/LeetCode/Easy/3.PalindromeNumber/PalindromeNumber.xcodeproj">
    </FileRef>
 </Workspace>
