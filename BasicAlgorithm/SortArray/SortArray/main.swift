@@ -7,9 +7,11 @@
 
 import Foundation
 
-print("Hello, World!")
+let array = [2, 1, 4, 5, 7, 6, 0, 3]
 
-let array = [2, 1, 4, 5, 3, 6, 0, 7]
+print(array)
 
-print("result:\(bubbleSort(array))")
+print("bubble sort:\(bubbleSort(array))")
+
+print("selection sort:\(selectionSort(array))")
 
