@@ -15,3 +15,4 @@ print("bubble sort:\(bubbleSort(array))")
 
 print("selection sort:\(selectionSort(array))")
 
+print("quick sort:\(quickSort(array))")
