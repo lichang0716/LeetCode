@@ -23,3 +23,5 @@ print("quick sort:\(quickSort(array))")
 print("insertion sort:\(insertionSort(array))")
 
 print("shell sort:\(shellSort(array))")
+
+print("radix sort:\(radixSort(num: array))")
